@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Paw print icon foreground -->
+    <group
+        android:translateX="30"
+        android:translateY="30">
+        <!-- Main pad -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M24,36 C24,36 16,30 16,24 C16,18 20,16 24,16 C28,16 32,18 32,24 C32,30 24,36 24,36 Z"/>
+        <!-- Toes -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M12,20 C12,20 8,16 8,12 C8,8 10,6 12,8 C14,10 12,20 12,20 Z"/>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M36,20 C36,20 40,16 40,12 C40,8 38,6 36,8 C34,10 36,20 36,20 Z"/>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M18,12 C18,12 16,8 14,4 C12,0 16,-2 18,2 C20,6 18,12 18,12 Z"/>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M30,12 C30,12 32,8 34,4 C36,0 32,-2 30,2 C28,6 30,12 30,12 Z"/>
+    </group>
+</vector>
