@@ -17,6 +17,18 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("release") {
+            val keystoreFile = file("release.keystore")
+            if (keystoreFile.exists()) {
+                storeFile = keystoreFile
+                storePassword = System.getenv("KEYSTORE_PASSWORD") ?: "PetCare2026"
+                keyAlias = System.getenv("KEY_ALIAS") ?: "release"
+                keyPassword = System.getenv("KEY_PASSWORD") ?: "PetCare2026"
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -25,15 +37,6 @@ android {
                 "proguard-rules.pro"
             )
             signingConfig = signingConfigs.getByName("release")
-        }
-    }
-
-    signingConfigs {
-        create("release") {
-            storeFile = file("release.keystore")
-            storePassword = "PetCare2026"
-            keyAlias = "release"
-            keyPassword = "PetCare2026"
         }
     }
 
@@ -68,6 +71,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation("androidx.activity:activity-ktx:1.8.2")
     implementation("androidx.fragment:fragment-ktx:1.6.2")
+    implementation("androidx.gridlayout:gridlayout:1.0.0")
 
     // Material Design 3
     implementation("com.google.android.material:material:1.11.0")
@@ -82,7 +86,6 @@ dependencies {
 
     // Charting
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
-    implementation("androidx.gridlayout:gridlayout:1.0.0")
 
     // Gson for JSON export
     implementation("com.google.code.gson:gson:2.10.1")
