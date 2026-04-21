@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">PetCare</string>
+    <string name="add_pet">Add Pet</string>
+    <string name="edit_pet">Edit Pet</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="about">About</string>
+    <string name="export_data">Export Data</string>
+    <string name="no_pets">No pets yet</string>
+    <string name="add_first_pet">Tap + to add your first pet</string>
+    <string name="feeding">Feeding</string>
+    <string name="vet_visits">Vet Visits</string>
+    <string name="medication">Medication</string>
+    <string name="weight">Weight</string>
+    <string name="vaccinations">Vaccinations</string>
+    <string name="notes">Notes</string>
+    <string name="check_updates">Check for Updates</string>
+    <string name="share_app">Share App</string>
+    <string name="view_github">View on GitHub</string>
+
+    <string-array name="note_categories">
+        <item>General</item>
+        <item>Health</item>
+        <item>Behaviour</item>
+        <item>Diet</item>
+    </string-array>
+</resources>
